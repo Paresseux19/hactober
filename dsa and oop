@@ -79,6 +79,8 @@ int del()
                 printf("\nQueue Underflow\n");
                 exit(1);
         }
+         item=queue_arr[front];
+        front=front+1;
        
         return item;
 }
